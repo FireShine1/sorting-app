@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sorting-app
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/stats
+    envVars:
+      - key: NODE_VERSION
+        value: "22"

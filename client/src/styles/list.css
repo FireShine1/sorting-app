@@ -1,0 +1,24 @@
+.list { list-style: none; margin: 0; padding: 4px 0; }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-light);
+  user-select: none;
+}
+.row-id { flex: 1; font-variant-numeric: tabular-nums; }
+.row-action { color: var(--muted); }
+
+.row--clickable { cursor: pointer; }
+.row--clickable:hover { background: var(--accent-soft); }
+.row--clickable:hover .row-action { color: var(--accent); }
+
+/* Drag & drop */
+.row--draggable { cursor: grab; background: var(--panel); }
+.row--ghost { opacity: 0.4; background: var(--accent-soft); }
+.row--chosen { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); }
+.drag-handle { color: var(--muted); }
+
+.sentinel { padding: 10px; text-align: center; font-size: 13px; min-height: 20px; }

@@ -1,0 +1,14 @@
+{
+  "name": "sorting-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "1 000 000 items: selection, filtering and drag & drop ordering (Express + Vue 3)",
+  "scripts": {
+    "build": "npm --prefix server install --omit=dev && npm --prefix client install --include=dev && npm --prefix client run build",
+    "start": "node server/src/index.js",
+    "test": "npm --prefix server test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
